@@ -33,7 +33,7 @@ along with this software (see the LICENSE.md file). If not, see
     </actions>
     <widgets>
         <container-row>
-
+            <!--> NOT USING ORIGINAL MENU
 
             <row-col md="2">
                 <label text="Operate" type="h3"/>
@@ -77,6 +77,36 @@ along with this software (see the LICENSE.md file). If not, see
                     <link text="Shipping" url="../Shipment" link-type="anchor" parameter-map="[parentShipmentType:'ShpTpOutgoing']"/>
                 </container>
             </row-col>
+            <-->
+
+            <!-->USING ONLY THIS COLUMN OF ITEMS<-->
+            <row-col md="2">
+                <label text="Manage" type="h3"/>
+                <container>
+                    <link url="../Catalog" link-type="anchor"><image url="/popc/static/images/Catalog.png" url-type="screen"/></link>
+                    <link text="Catalog" url="../Catalog" link-type="anchor"/>
+                </container>
+                <container>
+                    <link url="../Facility" link-type="anchor"><image url="/popc/static/images/Facility.png" url-type="screen"/></link>
+                    <link text="Facilities" url="../Facility" link-type="anchor"/>
+                </container>
+                <container>
+                    <link url="../Asset" link-type="anchor"><image url="/popc/static/images/Asset.png" url-type="screen"/></link>
+                    <link text="Assets" url="../Asset" link-type="anchor"/>
+                </container>
+                <container>
+                    <link url="../Vendor" link-type="anchor"><image url="/popc/static/images/Vendor.png" url-type="screen"/></link>
+                    <link text="Vendor(s)" url="../Vendor" link-type="anchor"/>
+                </container>
+                <container>
+                    <link url="../Accounting" link-type="anchor"><image url="/popc/static/images/Accounting.png" url-type="screen"/></link>
+                    <link text="Accounting" url="../Accounting" link-type="anchor"/>
+                </container>
+                <container>
+                    <link url="Reports" link-type="anchor"><image url="/popc/static/images/Reports.png" url-type="screen"/></link>
+                    <link text="Reports" url="Reports" link-type="anchor"/>
+                </container>
+            </row-col>
 
             <row-col md="8">
                 <form-list name="OrgInternalForm" list="orgInternalList" skip-form="true">
@@ -118,33 +148,7 @@ along with this software (see the LICENSE.md file). If not, see
                 </form-list>
             </row-col>
 
-            <row-col md="2">
-                <label text="Manage" type="h3"/>
-                <container>
-                    <link url="../Catalog" link-type="anchor"><image url="/popc/static/images/Catalog.png" url-type="screen"/></link>
-                    <link text="Catalog" url="../Catalog" link-type="anchor"/>
-                </container>
-                <container>
-                    <link url="../Facility" link-type="anchor"><image url="/popc/static/images/Facility.png" url-type="screen"/></link>
-                    <link text="Facilities" url="../Facility" link-type="anchor"/>
-                </container>
-                <container>
-                    <link url="../Asset" link-type="anchor"><image url="/popc/static/images/Asset.png" url-type="screen"/></link>
-                    <link text="Assets" url="../Asset" link-type="anchor"/>
-                </container>
-                <container>
-                    <link url="../Vendor" link-type="anchor"><image url="/popc/static/images/Vendor.png" url-type="screen"/></link>
-                    <link text="Vendor(s)" url="../Vendor" link-type="anchor"/>
-                </container>
-                <container>
-                    <link url="../Accounting" link-type="anchor"><image url="/popc/static/images/Accounting.png" url-type="screen"/></link>
-                    <link text="Accounting" url="../Accounting" link-type="anchor"/>
-                </container>
-                <container>
-                    <link url="Reports" link-type="anchor"><image url="/popc/static/images/Reports.png" url-type="screen"/></link>
-                    <link text="Reports" url="Reports" link-type="anchor"/>
-                </container>
-            </row-col>
+
         </container-row>
     </widgets>
 </screen>

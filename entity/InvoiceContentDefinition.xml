@@ -1,0 +1,25 @@
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/entity-definition-2.0.xsd">
+
+    <entity entity-name="InvoiceContent" package-name="mantle.account.invoice">
+        <field name="invoiceContentId" type="id" is-pk="true"/>
+        <field name="invoiceId" type="id"/>
+        <field name="contentLocation" type="text-medium"/>
+        <field name="invoiceContentTypeEnumId" type="id"/>
+        <field name="locale" type="text-short"/>
+        <field name="fromDate" type="date-time" default="ec.user.nowTimestamp"/>
+        <field name="thruDate" type="date-time"/>
+        <field name="description" type="text-long"/>
+        <field name="sequenceNum" type="number-integer"/>
+        <field name="userId" type="id" default="ec.user.userId"/>
+        <relationship type="one" related-entity-name="mantle.account.invoice.Invoice"/>
+        <relationship type="one" title="InvoiceContentType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="invoiceContentTypeEnumId"/>
+        </relationship>
+    </entity>
+
+    <extend-entity entity-name="Invoice" package-name="mantle.account.invoice">
+        <relationship type="many" related-entity-name="mantle.account.invoice.Invoice" short-alias="contents">
+            <key-map field-name="invoiceId"/></relationship>
+    </extend-entity>
+</entities>

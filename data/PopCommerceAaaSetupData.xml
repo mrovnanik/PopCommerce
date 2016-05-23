@@ -14,11 +14,11 @@ along with this software (see the LICENSE.md file). If not, see
 -->
 <entity-facade-xml type="seed">
     <moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot.xml"
-            subscreenName="popc" menuTitle="POP Commerce" menuIndex="9" menuInclude="N"
+            subscreenName="popc" menuTitle="Ekonomika" menuIndex="9" menuInclude="N"
             subscreenLocation="component://PopCommerce/screen/PopCommerceRoot.xml"/>
     <moqui.screen.SubscreensItem screenLocation="component://webroot/screen/webroot/apps.xml"
             subscreenName="PopcAdmin" subscreenLocation="component://PopCommerce/screen/PopCommerceAdmin.xml"
-            menuTitle="POP Commerce Admin" menuIndex="9" menuInclude="Y"/>
+            menuTitle="Ekonomika - došlé faktúry" menuIndex="9" menuInclude="Y"/>
 
     <!-- authz/permission for ALL users -->
     <moqui.security.ArtifactGroup artifactGroupId="POPC" description="POP Commerce App (via root screen)"/>
