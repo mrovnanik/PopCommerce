@@ -1,0 +1,142 @@
+<entity-facade-xml type="seed">
+    <moqui.basic.LocalizedMessage localized="Ekonomika" 				    lastUpdatedStamp="1464007316574" original="Economy" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Beží na Moqui 2.0.0" 		    lastUpdatedStamp="1464007316574" original="Built on Moqui Framework 2.0.0" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Lokalizácia" 				    lastUpdatedStamp="1464007316574" original="Localization" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Jazyk" 				        lastUpdatedStamp="1464007316574" original="Locale" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Preklad" 				        lastUpdatedStamp="1464007316574" original="Localized" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Časové pásmo" 				    lastUpdatedStamp="1464007316574" original="Time Zone" locale="sk"/>
+
+	<moqui.basic.LocalizedMessage localized="Aktualizuj" 				    lastUpdatedStamp="1464007316574" original="Update" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pošli správu" 				    lastUpdatedStamp="1464007316574" original="Send Message" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vytvor" 					    lastUpdatedStamp="1464007316574" original="Create" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zmeň heslo" 				    lastUpdatedStamp="1464007316574" original="Change Password" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Prihlás sa" 				    lastUpdatedStamp="1464007316574" original="Sign in" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vytvor faktúru" 			    lastUpdatedStamp="1464075352759" original="New Invoice" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Nový záznam" 				    lastUpdatedStamp="1464007316574" original="New Message" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zmeň platobné informácie" 	    lastUpdatedStamp="1464007316574" original="Edit Payment Info" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zmeň" 	                        lastUpdatedStamp="1464007316574" original="Edit" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zmeň fakturačné informácie" 	lastUpdatedStamp="1464007316574" original="Edit Billing Info" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Nájdi" 	                    lastUpdatedStamp="1464007316574" original="Find" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vytvor používateľské konto"    lastUpdatedStamp="1464007316574" original="Create User Account" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vytvor skupinu používateľov"   lastUpdatedStamp="1464007316574" original="Create User Group" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vytvor skupinu bezp. predm."   lastUpdatedStamp="1464007316574" original="Create Artifact Group" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Strana"                        lastUpdatedStamp="1464007316574" original="Strana" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pridaj skupinu"                lastUpdatedStamp="1464007316574" original="Add Group" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pridaj preferenciu"            lastUpdatedStamp="1464007316574" original="Add Preference" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Nájdi partnera" 			    lastUpdatedStamp="1464007316574" original="Find Vendor" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vyhľadávaj partnerov" 		    lastUpdatedStamp="1464007316574" original="Search Vendors" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pridaj partnera" 			    lastUpdatedStamp="1464007316574" original="Add Vendor" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pridaj prílohu" 			    lastUpdatedStamp="1464007316574" original="Add Content" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Platobné informácie" 	        lastUpdatedStamp="1464007316574" original="Payment Information" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Fakturačné údaje" 	            lastUpdatedStamp="1464007316574" original="Billing Information" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Názov organizácie" 	        lastUpdatedStamp="1464007316574" original="Organization Name" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Nastavenia účtovníctva" 	    lastUpdatedStamp="1464007316574" original="Accounting Preferences" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Kontaktné údaje" 	            lastUpdatedStamp="1464007316574" original="Contact Info" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="e-mail" 	                    lastUpdatedStamp="1464007316574" original="Email Address" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Používateľské meno" 	        lastUpdatedStamp="1464007316574" original="User Full Name" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vynútená zmena hesla" 	        lastUpdatedStamp="1464007316574" original="Req PW Change" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Bilancia" 	                    lastUpdatedStamp="1464007316574" original="Balance" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Neúspešné prihlásenia" 	    lastUpdatedStamp="1464007316574" original="Failed Logins" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Aplikácie" 	                lastUpdatedStamp="1464007316574" original="Applications" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zoznam" 	                    lastUpdatedStamp="1464007316574" original="App list" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Správy" 					    lastUpdatedStamp="1464007316574" original="Messages" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Tabuľa" 				        lastUpdatedStamp="1464007316574" original="Dashboard" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Aplikácie" 				    lastUpdatedStamp="1464007316574" original="Application" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Kalendár" 					    lastUpdatedStamp="1464007316574" original="Calendar" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Úloha" 					    lastUpdatedStamp="1464007316574" original="Task" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Systém" 					    lastUpdatedStamp="1464007316574" original="System" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Reporty" 					    lastUpdatedStamp="1464075126820" original="Reports" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Vyzdvihnutie" 					lastUpdatedStamp="1464075126820" original="Picking" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Zruš" 			                lastUpdatedStamp="1464007316574" original="Cancel" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zrušený" 			            lastUpdatedStamp="1464007316574" original="Cancelled" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Prijmi platbu" 			    lastUpdatedStamp="1464007316574" original="Receive Payment" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Platba prijatá" 			    lastUpdatedStamp="1464007316574" original="Payment Received" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pokračuj v editácii" 			lastUpdatedStamp="1464007316574" original="Resume Changes" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="V spracovaní" 			        lastUpdatedStamp="1464007316574" original="In-Process" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Odošli" 			            lastUpdatedStamp="1464007316574" original="Send" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Odoslaná" 			            lastUpdatedStamp="1464007316574" original="Sent" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Odpíš" 			            lastUpdatedStamp="1464007316574" original="Write Off" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Nedostupný" 			        lastUpdatedStamp="1464007316574" original="Disabled" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Aktuálny" 			            lastUpdatedStamp="1464007316574" original="Current" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Účtovníctvo" 				    lastUpdatedStamp="1464074935724" original="Accounting" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Administrácia" 			    lastUpdatedStamp="1464074959443" original="Manage" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Aktíva" 					    lastUpdatedStamp="1464075073211" original="Assets" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Aktívum" 					    lastUpdatedStamp="1464075073211" original="Asset" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Katalóg produktov" 			lastUpdatedStamp="1464075087505" original="Catalog" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zariadenia" 				lastUpdatedStamp="1464075101075" original="Facilities" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zariadenie" 				lastUpdatedStamp="1464075101075" original="Facility" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Partneri" 					lastUpdatedStamp="1464075118376" original="Vendor(s)" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pohľadávky" 				lastUpdatedStamp="1464075158959" original="Receivable" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Objednávky" 				lastUpdatedStamp="1464075158959" original="Orders" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zásielky" 				    lastUpdatedStamp="1464075158959" original="Shipments" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Záväzky" 					lastUpdatedStamp="1464075167953" original="Payable" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Faktúra"                   lastUpdatedStamp="1464075352759" original="Invoice" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Faktúry" 			        lastUpdatedStamp="1464075352759" original="Invoices" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Partner" 			        lastUpdatedStamp="1464075352759" original="Vendor" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Partneri" 			        lastUpdatedStamp="1464075352759" original="Vendors" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zákazník" 			        lastUpdatedStamp="1464075352759" original="Customer" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Zákazníci" 			    lastUpdatedStamp="1464075352759" original="Customers" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Dodávateľ" 			    lastUpdatedStamp="1464075352759" original="Supplier" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Dodávatelia" 			    lastUpdatedStamp="1464075352759" original="Suppliers" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Organizácia" 			    lastUpdatedStamp="1464075352759" original="Organization" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Účet" 						lastUpdatedStamp="1464007316574" original="Account" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Môj účet" 					lastUpdatedStamp="1464007316574" original="My Account" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Používateľ" 				lastUpdatedStamp="1464007316574" original="username" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Používateľ" 				lastUpdatedStamp="1464007316574" original="User" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Používateľ" 				lastUpdatedStamp="1464007316574" original="Username" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Používatelia" 				lastUpdatedStamp="1464007316574" original="Users" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Krstné meno" 				lastUpdatedStamp="1464007316574" original="firstName" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Krstné meno" 				lastUpdatedStamp="1464007316574" original="Firstname" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Krstné meno" 				lastUpdatedStamp="1464007316574" original="FirstName" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Meno" 						lastUpdatedStamp="1464007316574" original="First Name" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Prostredné meno" 			lastUpdatedStamp="1464007316574" original="Middle Name" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Priezvisko" 				lastUpdatedStamp="1464007316574" original="Last Name" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Skupiny použ." 	        lastUpdatedStamp="1464007316574" original="User Groups" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Skupiny bezp. predmetov" 	lastUpdatedStamp="1464007316574" original="Artifact Groups" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Návšteva" 	                lastUpdatedStamp="1464007316574" original="Visit" locale="sk"/>
+
+    <moqui.basic.LocalizedMessage localized="Entita" 	                lastUpdatedStamp="1464007316574" original="Entity" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pole" 	                    lastUpdatedStamp="1464007316574" original="Field" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Starý" 	                lastUpdatedStamp="1464007316574" original="Old" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Nový" 	                    lastUpdatedStamp="1464007316574" original="New" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Avizované úhrady objedn." 	lastUpdatedStamp="1464007316574" original="Promised Order Payments" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Stav" 						lastUpdatedStamp="1464007316574" original="Status" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="História stavov" 			lastUpdatedStamp="1464007316574" original="Status History" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Priradenie platieb" 	    lastUpdatedStamp="1464007316574" original="Payment Applications" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Popis" 					lastUpdatedStamp="1464007316574" original="Description" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Obsah" 					lastUpdatedStamp="1464007316574" original="Content" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Obsah" 					lastUpdatedStamp="1464007316574" original="Content" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="ID" 						lastUpdatedStamp="1464007316574" original="ID" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="ID skup." 				    lastUpdatedStamp="1464007316574" original="Group ID" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="ID obj." 				    lastUpdatedStamp="1464007316574" original="Order ID" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="ID platby" 				lastUpdatedStamp="1464007316574" original="Payment ID" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="ID skup. používateľov" 	lastUpdatedStamp="1464007316574" original="User Group ID" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="ID skup bezp. predmetov" 	lastUpdatedStamp="1464007316574" original="Artifact Group ID" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Zdanit. plnenie" 			lastUpdatedStamp="1464007316574" original="Invoice Date" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Splatn." 					lastUpdatedStamp="1464007316574" original="Due Date" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Dátum" 					lastUpdatedStamp="1464007316574" original="Date" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Suma spolu" 				lastUpdatedStamp="1464007316574" original="Invoice Total" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Suma" 				        lastUpdatedStamp="1464007316574" original="Amount" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Typ" 						lastUpdatedStamp="1464007316574" original="Type" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Referencia" 				lastUpdatedStamp="1464007316574" original="Ref Num" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Typ fa." 					lastUpdatedStamp="1464007316574" original="invoiceTypeEnumId" locale="sk"/>
+	<!--<moqui.basic.LocalizedMessage localized="Typ fak." 					lastUpdatedStamp="1464007316574" original="EditInvoice_invoiceTypeEnumId" locale="sk"/>-->
+	<moqui.basic.LocalizedMessage localized="Číslo fa." 				lastUpdatedStamp="1464007316574" original="Invoice ID" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Interná zložka" 			lastUpdatedStamp="1464075352759" original="Internal Organization" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Skratky" 					lastUpdatedStamp="1464075352759" original="Quick Links" locale="sk"/>
+	<moqui.basic.LocalizedMessage localized="Externé číslo" 			lastUpdatedStamp="1464075352759" original="Reference Number" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Od" 			            lastUpdatedStamp="1464075352759" original="From" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pre" 			            lastUpdatedStamp="1464075352759" original="To" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Položky" 			        lastUpdatedStamp="1464075352759" original="Items" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Položka" 			        lastUpdatedStamp="1464075352759" original="Item" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Rola" 			            lastUpdatedStamp="1464075352759" original="Role" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Pôvodný" 			        lastUpdatedStamp="1464075352759" original="Original" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Dohoda o splatnosti"       lastUpdatedStamp="1464075352759" original="Settlement Term" locale="sk"/>
+    <moqui.basic.LocalizedMessage localized="Poznámka k fakt."          lastUpdatedStamp="1464075352759" original="Invoice Message" locale="sk"/>
+</entity-facade-xml>
