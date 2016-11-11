@@ -33,47 +33,45 @@ along with this software (see the LICENSE.md file). If not, see
     </actions>
     <widgets>
         <container-row>
-
-
             <row-col md="2">
                 <label text="Operate" type="h3"/>
                 <container>
-                    <link url="../Supplier" link-type="anchor"><image url="/popc/static/images/Supplier.png" url-type="screen"/></link>
+                    <link url="../Supplier" link-type="anchor"><image url="/popc/static/images/Supplier.png" url-type="screen" style="invertible"/></link>
                     <link text="Suppliers" url="../Supplier" link-type="anchor"/>
                 </container>
                 <container>
-                    <link url="../Order" link-type="anchor" parameter-map="[customerRoleTypeId:'OrgInternal']">
-                        <image url="/popc/static/images/Purchasing.png" url-type="screen"/></link>
-                    <link text="Purchasing" url="../Order" link-type="anchor" parameter-map="[customerRoleTypeId:'OrgInternal']"/>
+                    <link url="../Order" link-type="anchor" parameter-map="[orderType:'Purchase']">
+                        <image url="/popc/static/images/Purchasing.png" url-type="screen" style="invertible"/></link>
+                    <link text="Purchasing" url="../Order" link-type="anchor" parameter-map="[orderType:'Purchase']"/>
                 </container>
                 <container>
                     <link url="../Shipment" link-type="anchor" parameter-map="[parentShipmentType:'ShpTpIncoming']">
-                        <image url="/popc/static/images/Receiving.png" url-type="screen"/></link>
+                        <image url="/popc/static/images/Receiving.png" url-type="screen" style="invertible"/></link>
                     <link text="Receiving" url="../Shipment" link-type="anchor" parameter-map="[parentShipmentType:'ShpTpIncoming']"/>
                 </container>
                 <container>
                     <link url="../Asset" link-type="anchor" parameter-map="[assetTypeEnumId:'AstTpInventory']">
-                        <image url="/popc/static/images/Inventory.png" url-type="screen"/></link>
+                        <image url="/popc/static/images/Inventory.png" url-type="screen" style="invertible"/></link>
                     <link text="Inventory" url="../Asset" link-type="anchor" parameter-map="[assetTypeEnumId:'AstTpInventory']"/>
                 </container>
 
                 <container>
-                    <link url="../Customer" link-type="anchor"><image url="/popc/static/images/Customer.png" url-type="screen"/></link>
+                    <link url="../Customer" link-type="anchor"><image url="/popc/static/images/Customer.png" url-type="screen" style="invertible"/></link>
                     <link text="Customers" url="../Customer" link-type="anchor"/>
                 </container>
                 <container>
-                    <link url="../Order" link-type="anchor" parameter-map="[vendorRoleTypeId:'OrgInternal']">
-                        <image url="/popc/static/images/Sales.png" url-type="screen"/></link>
-                    <link text="Sales" url="../Order" link-type="anchor" parameter-map="[vendorRoleTypeId:'OrgInternal']"/>
+                    <link url="../Order" link-type="anchor" parameter-map="[orderType:'Sales']">
+                        <image url="/popc/static/images/Sales.png" url-type="screen" style="invertible"/></link>
+                    <link text="Sales" url="../Order" link-type="anchor" parameter-map="[orderType:'Sales']"/>
                 </container>
                 <container>
                     <link url="../Picking" link-type="anchor">
-                        <image url="/popc/static/images/Picking.png" url-type="screen"/></link>
+                        <image url="/popc/static/images/Picking.png" url-type="screen" style="invertible"/></link>
                     <link text="Picking" url="../Picking" link-type="anchor"/>
                 </container>
                 <container>
                     <link url="../Shipment" link-type="anchor" parameter-map="[parentShipmentType:'ShpTpOutgoing']">
-                        <image url="/popc/static/images/Shipping.png" url-type="screen"/></link>
+                        <image url="/popc/static/images/Shipping.png" url-type="screen" style="invertible"/></link>
                     <link text="Shipping" url="../Shipment" link-type="anchor" parameter-map="[parentShipmentType:'ShpTpOutgoing']"/>
                 </container>
             </row-col>
@@ -90,7 +88,7 @@ along with this software (see the LICENSE.md file). If not, see
                         <set field="recDesc" value=""/>
                         <iterate list="recInvList" entry="recInv">
                             <if condition="recDesc"><set field="recDesc" from="recDesc + ', '"/></if>
-                            <set field="recDesc" from="recDesc + recInv.invoiceCount + ' Invoice' + (recInv.invoiceCount ? 's ' : ' ') + ec.l10n.formatCurrency(recInv.grandTotal, recInv.currencyUomId, 2)"/>
+                            <set field="recDesc" from="recDesc + recInv.invoiceCount + ' Invoice' + (recInv.invoiceCount ? 's ' : ' ') + ec.l10n.formatCurrency(recInv.grandTotal, recInv.currencyUomId)"/>
                         </iterate>
                         <entity-find entity-name="mantle.account.invoice.InvoiceSummary" list="pblInvList">
                             <econdition field-name="toPartyId" from="partyId"/>
@@ -101,7 +99,7 @@ along with this software (see the LICENSE.md file). If not, see
                         <set field="pblDesc" value=""/>
                         <iterate list="pblInvList" entry="pblInv">
                             <if condition="pblDesc"><set field="pblDesc" from="pblDesc + ', '"/></if>
-                            <set field="pblDesc" from="pblDesc + pblInv.invoiceCount + ' Invoice' + (pblInv.invoiceCount ? 's ' : ' ') + ec.l10n.formatCurrency(pblInv.grandTotal, pblInv.currencyUomId, 2)"/>
+                            <set field="pblDesc" from="pblDesc + pblInv.invoiceCount + ' Invoice' + (pblInv.invoiceCount ? 's ' : ' ') + ec.l10n.formatCurrency(pblInv.grandTotal, pblInv.currencyUomId)"/>
                         </iterate>
                     </row-actions>
                     <field name="name"><default-field title="Internal Organization">
@@ -118,31 +116,31 @@ along with this software (see the LICENSE.md file). If not, see
                 </form-list>
             </row-col>
 
-            <row-col md="2">
+            <row-col md="2" style="text-right">
                 <label text="Manage" type="h3"/>
                 <container>
-                    <link url="../Catalog" link-type="anchor"><image url="/popc/static/images/Catalog.png" url-type="screen"/></link>
                     <link text="Catalog" url="../Catalog" link-type="anchor"/>
+                    <link url="../Catalog" link-type="anchor"><image url="/popc/static/images/Catalog.png" url-type="screen" style="invertible"/></link>
                 </container>
                 <container>
-                    <link url="../Facility" link-type="anchor"><image url="/popc/static/images/Facility.png" url-type="screen"/></link>
                     <link text="Facilities" url="../Facility" link-type="anchor"/>
+                    <link url="../Facility" link-type="anchor"><image url="/popc/static/images/Facility.png" url-type="screen" style="invertible"/></link>
                 </container>
                 <container>
-                    <link url="../Asset" link-type="anchor"><image url="/popc/static/images/Asset.png" url-type="screen"/></link>
                     <link text="Assets" url="../Asset" link-type="anchor"/>
+                    <link url="../Asset" link-type="anchor"><image url="/popc/static/images/Asset.png" url-type="screen" style="invertible"/></link>
                 </container>
                 <container>
-                    <link url="../Vendor" link-type="anchor"><image url="/popc/static/images/Vendor.png" url-type="screen"/></link>
-                    <link text="Vendor(s)" url="../Vendor" link-type="anchor"/>
+                    <link text="Vendors" url="../Vendor" link-type="anchor"/>
+                    <link url="../Vendor" link-type="anchor"><image url="/popc/static/images/Vendor.png" url-type="screen" style="invertible"/></link>
                 </container>
                 <container>
-                    <link url="../Accounting" link-type="anchor"><image url="/popc/static/images/Accounting.png" url-type="screen"/></link>
                     <link text="Accounting" url="../Accounting" link-type="anchor"/>
+                    <link url="../Accounting" link-type="anchor"><image url="/popc/static/images/Accounting.png" url-type="screen" style="invertible"/></link>
                 </container>
                 <container>
-                    <link url="Reports" link-type="anchor"><image url="/popc/static/images/Reports.png" url-type="screen"/></link>
                     <link text="Reports" url="Reports" link-type="anchor"/>
+                    <link url="Reports" link-type="anchor"><image url="/popc/static/images/Reports.png" url-type="screen" style="invertible"/></link>
                 </container>
             </row-col>
         </container-row>

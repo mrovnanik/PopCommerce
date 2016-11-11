@@ -33,8 +33,8 @@ along with this software (see the LICENSE.md file). If not, see
     <actions>
         <if condition="category || keywords">
             <set field="queryString" from="keywords"/>
-            <if condition="category"><set field="queryString" from="(queryString ? queryString + ' AND ' : '') + 'productCategoryId:' + category"/></if>
-            <service-call name="org.moqui.impl.EntityServices.search#DataDocuments" out-map="context"
+            <if condition="category"><set field="queryString" from="(queryString ? queryString + ' AND ' : '') + 'categories.productCategoryId:' + category"/></if>
+            <service-call name="org.moqui.search.SearchServices.search#DataDocuments" out-map="context"
                     in-map="[queryString:queryString, indexName:'popc', documentType:'PopcProduct']"/>
         </if>
     </actions>
@@ -73,7 +73,7 @@ along with this software (see the LICENSE.md file). If not, see
             </row-actions>
 
             <field name="productId"><default-field><hidden/></default-field></field>
-            <field name="productName" entry-name="product.productName"><default-field title="">
+            <field name="productName" from="product.productName"><default-field title="">
                 <link text="${product.productName}" url="/popc/Product/Detail/${productId}/${product.productName?.replace(' ', '-')}"
                         url-noparam="true" link-type="anchor"/>
             </default-field></field>
