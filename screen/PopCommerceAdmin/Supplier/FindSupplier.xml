@@ -22,7 +22,6 @@ along with this software (see the LICENSE.md file). If not, see
         <default-response url="../EditSupplier"/></transition>
     <transition name="createOrganization"><service-call name="mantle.party.PartyServices.create#Organization"/>
         <default-response url="../EditSupplier"/></transition>
-    <transition-include name="getPartyList" location="component://SimpleScreens/template/party/PartyForms.xml"/>
 
     <pre-actions><set field="roleTypeId" value="Supplier"/></pre-actions>
     <actions>
@@ -43,14 +42,39 @@ along with this software (see the LICENSE.md file). If not, see
                     extends="component://SimpleScreens/screen/SimpleScreens/Party/FindParty.xml#CreateOrganizationForm"/>
         </container-dialog>
 
-        <form-list name="SupplierListForm" list="partyIdList" list-entry="partyId" skip-form="true"
-                extends="component://SimpleScreens/screen/SimpleScreens/Party/FindParty.xml#PartyListForm">
-            <field name="pseudoId"><default-field>
-                <link url="editSupplier" text="${party.pseudoId}"/></default-field></field>
+        <form-list name="SupplierListForm" list="partyIdList" list-entry="partyId">
+            <row-actions>
+                <entity-find-one entity-name="mantle.party.PartyDetail" value-field="party"/>
+                <entity-find-one entity-name="mantle.party.PartyIdentification" value-field="partyICO">
+                    <field-map field-name="partyId"/>
+                    <field-map field-name="partyIdTypeEnumId" value="PtidICO"/>
+                </entity-find-one>
+                <entity-find-one entity-name="mantle.party.PartyIdentification" value-field="partyDIC">
+                    <field-map field-name="partyId"/>
+                    <field-map field-name="partyIdTypeEnumId" value="PtidDIC"/>
+                </entity-find-one>
+            </row-actions>
+
+            <field name="combinedName">
+                <header-field title="Name" show-order-by="case-insensitive"><text-find size="20" hide-options="true"/></header-field>
+                <default-field><display text="PartyNameOnlyTemplate" text-map="party"/></default-field>
+            </field>
+
+            <field name="idValue">
+                <header-field title="Company ID" show-order-by="case-insensitive"><text-find size="20" hide-options="true"/></header-field>
+                <default-field><display text="${partyICO?.idValue?:''}"/></default-field>
+            </field>
+
+            <field name="idValue 2">
+                <header-field title="Tax Number" show-order-by="case-insensitive"><text-find size="20" hide-options="true"/></header-field>
+                <default-field><display text="${partyDIC?.idValue?:''}"/></default-field>
+            </field>
+
             <field name="submitButton">
                 <header-field title="Find"><submit/></header-field>
-                <default-field><link url="findOrder" text="Purchase Orders" parameter-map="[vendorPartyId:partyId]"
-                        link-type="anchor"/></default-field>
+                <default-field>
+                    <link url="editSupplier" text="Edit" link-type="anchor"/>
+                </default-field>
             </field>
         </form-list>
     </widgets>
