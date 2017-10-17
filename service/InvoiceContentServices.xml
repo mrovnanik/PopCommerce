@@ -39,9 +39,29 @@
         </in-parameters>
         <out-parameters><parameter name="contentLocation"/></out-parameters>
         <actions>
+            <script>
+                import javax.mail.internet.MimeUtility
+                import org.moqui.impl.service.FileNameGenerator
+            </script>
+
             <set field="filename" from="contentFile.getName()"/>
+
+            <set field="displayName" from="filename"/>
+            <set field="newFileName" from="null"/>
+            <set field="newFileExtension" from="null"/>
+            <script>
+                FileNameGenerator fng = new FileNameGenerator(16)
+
+                //file name being generated
+                newFileName = fng.nextString()
+                newFileExtension = filename.tokenize('.')[1]
+
+                //display name
+                displayName = MimeUtility.decodeText(filename.tokenize('.')[0]).replaceAll(' ', '_').replaceAll("[^a-zA-Z0-9_]+","") + "." + newFileExtension
+            </script>
+
             <set field="contentRoot" from="ec.user.getPreference('mantle.content.root') ?: 'dbresource://mantle/content'"/>
-            <set field="contentLocation" value="${contentRoot}/invoice/${invoiceId}/content_${invoiceContentId}/${filename}"/>
+            <set field="contentLocation" value="${contentRoot}/invoice/${invoiceId}/content_${invoiceContentId}/${newFileName}.${newFileExtension}"/>
 
             <set field="docRr" from="ec.resource.getLocationReference(contentLocation)"/>
             <script>
@@ -50,7 +70,7 @@
             </script>
 
             <if condition="saveContentLocation"><service-call name="update#mantle.account.invoice.InvoiceContent"
-                                                              in-map="[invoiceContentId:invoiceContentId, contentLocation:contentLocation]"/></if>
+                                                              in-map="[invoiceContentId:invoiceContentId, contentLocation:contentLocation, displayName:displayName]"/></if>
         </actions>
     </service>
 </services>
