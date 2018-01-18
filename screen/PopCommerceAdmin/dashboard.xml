@@ -42,21 +42,7 @@ along with this software (see the LICENSE.md file). If not, see
         <default-response type="none"/>
     </transition>
 
-    <pre-actions>
-        <script>html_scripts.add("/ssstatic/lib/fullcalendar/fullcalendar.min.js")</script>
-        <script>html_scripts.add("/ssstatic/lib/fullcalendar/lang-all.js")</script>
-        <script>html_scripts.add("/ssstatic/lib/bootstrap-tagsinput/bootstrap-tagsinput.js")</script>
-        <script>html_stylesheets.add("/ssstatic/lib/fullcalendar/fullcalendar.min.css")</script>
-        <script>html_stylesheets.add("/ssstatic/lib/fullcalendar/fullcalendar_customize.css")</script>
-        <script>html_stylesheets.add("/ssstatic/lib/bootstrap-tagsinput/bootstrap-tagsinput.css")</script>
-    </pre-actions>
-
     <actions>
-        <entity-find entity-name="mantle.work.effort.WorkEffort" list="projectList">
-            <econdition field-name="workEffortTypeEnumId" value="WetProject"/>
-            <econdition field-name="statusId" value="WeInProgress"/>
-        </entity-find>
-
         <entity-find entity-name="mantle.party.PartyDetailAndRole" list="orgInternalList">
             <econdition field-name="roleTypeId" value="OrgInternal"/>
             <econdition field-name="disabled" value="N" or-null="true"/>
@@ -65,7 +51,6 @@ along with this software (see the LICENSE.md file). If not, see
 
         <!-- define internal companies list (of maps) and pass it to the render thing downstairs -->
         <set field="internalCompanies" from="[]"/>
-
 
         <!--@ToDo have to load predefined colors from a kind of settings -->
         <!-- predefined colors for the first customer -->
@@ -79,12 +64,12 @@ along with this software (see the LICENSE.md file). If not, see
             def defaultFillColor = '#f48519'
 
             for (def orgInternal in orgInternalList)
-            internalCompanies.add([partyId: orgInternal.partyId, colorNum: predefinedColors.find {it.partyId=="${orgInternal.partyId}"}?.colorNum?:defaultFillColor])
+                internalCompanies.add([partyId: orgInternal.partyId, colorNum: predefinedColors.find {it.partyId=="${orgInternal.partyId}"}?.colorNum?:defaultFillColor])
 
         </script>
     </actions>
 
-        <widgets>
+    <widgets>
         <container-row>
             <!-->MAIN VIEW<-->
             <row-col md="10">
@@ -185,7 +170,7 @@ along with this software (see the LICENSE.md file). If not, see
                 <label text="Payables Calendar" type="h3" display-if-empty="true" />
 
                 <render-mode>
-                    <text type="html" location="component://economy-setup/screen/Common/Dashboard/FullCalendarPayables.ftl"/>
+                    <text type="vuet" location="component://economy-setup/screen/Common/Dashboard/FullCalendarPayables.ftl"/>
                 </render-mode>
 
             </row-col>
